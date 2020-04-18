@@ -1,0 +1,14 @@
+{
+  "name": "algorithms-challenges-in-js",
+  "version": "1.0.0",
+  "description": "This is a personal and continuous study repository. The intention is to solve some algorithms using Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "@jeffersonrt",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
+}
