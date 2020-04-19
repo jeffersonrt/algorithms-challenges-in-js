@@ -5,15 +5,35 @@ The intention is to solve some algorithms using Javascript.
 
 ## Installation
 
-Clone this repository.
+Clone this repository and run:
+
+```
+yarn install
+```
 
 ## Usage
 
-At the root directory run:
+This repository has two branches.
+
+> master
+
+Here you can find the challenge and tests.
+
+> solved
+
+Here you can find a possible solution for it.
+
+---
+
+After to do the exercise you can run the command below to check your result:
 
 ```
 yarn test
 ```
+
+## Challenges
+
+- [Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem) :+1
 
 ## Contributing
 
