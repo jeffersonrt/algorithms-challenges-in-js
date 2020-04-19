@@ -7,6 +7,14 @@
  *
  */
 
-function twoAddUp(list, k) {}
+function twoAddUp(list, k) {
+  const numbers = new Set();
+
+  return list.some((element) => {
+    const result = numbers.has(k - element);
+    if (!result) numbers.add(element);
+    return result;
+  });
+}
 
 export default twoAddUp;
