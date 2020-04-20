@@ -7,6 +7,30 @@
  * @from https://www.dailycodingproblem.com/
  */
 
-function wellFormedString(expression) {}
+function wellFormedString(expression) {
+  const expressionArr = expression.split("");
+  const openChars = [];
+  const chars = new Map([
+    ["(", ")"],
+    ["[", "]"],
+    ["{", "}"],
+  ]);
+
+  const validation = expressionArr.every((char) => {
+    if (chars.has(char)) {
+      openChars.push(char);
+      return true;
+    } else {
+      if (chars.get(openChars[openChars.length - 1]) === char) {
+        openChars.pop();
+        return true;
+      } else {
+        return false;
+      }
+    }
+  });
+
+  return openChars.length === 0 && validation;
+}
 
 export default wellFormedString;
