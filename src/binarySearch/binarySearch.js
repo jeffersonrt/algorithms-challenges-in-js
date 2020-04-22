@@ -6,12 +6,16 @@
  *
  */
 
-function binarySearch(list, target) {
+/*
+ * ITERATIVE APPROACH
+ */
+
+const binarySearch = (list, target) => {
   let pointL = 0;
   let pointR = list.length - 1;
   let middlePoint = Math.floor((pointL + pointR) / 2);
 
-  while (true) {
+  while (list.length > middlePoint) {
     //Depends on the programming language you are using you need to check if the array size (list) is bigger than middlePoint list.length > middlePoint to stop while
     let middleElement = list[middlePoint];
 
@@ -32,6 +36,32 @@ function binarySearch(list, target) {
   }
 
   return middlePoint;
-}
+};
 
-export default binarySearch;
+/*
+ * RECURSIVE APPROACH
+ */
+
+const binarySearchRecursion = (
+  list,
+  target,
+  pointL = 0,
+  pointR = list.length - 1
+) => {
+  let middlePoint = Math.floor((pointL + pointR) / 2);
+  let middleElement = list[middlePoint];
+
+  if (middleElement === target) return middlePoint;
+
+  if (pointL > pointR) return -1;
+
+  if (target < middleElement) {
+    return binarySearchRecursion(list, target, pointL, middlePoint - 1);
+  }
+
+  if (target > middleElement) {
+    return binarySearchRecursion(list, target, middlePoint + 1, pointR);
+  }
+};
+
+export { binarySearchRecursion, binarySearch };
