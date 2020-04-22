@@ -1,4 +1,4 @@
-import { binarySearch, binarySearchRecursion } from "./binarySearch.js";
+import { binarySearch, binarySearchRecursion } from "./binarySearch";
 
 describe("ITERATIVE - Binary Search ", () => {
   test("Should return 1 when is given this array [1, 2, 3, 4, 5 ] and target 2", () => {
