@@ -1,7 +1,7 @@
 import { toMatchCloseTo } from "jest-matcher-deep-close-to";
 expect.extend({ toMatchCloseTo });
 
-import plusMinus from "./PlusMinus.js";
+import plusMinus from "./PlusMinus";
 
 describe("Plus Minus", () => {
   test("Should return plus = 0.375000 / minus = 0.375000 / zero = 0.250000 ", () => {
