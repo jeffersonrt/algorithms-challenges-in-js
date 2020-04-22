@@ -1,4 +1,4 @@
-import twoAddUp from "./TwoAddUpK.js";
+import twoAddUp from "./TwoAddUpK";
 
 describe("Problem Two elements add up to K", () => {
   test("Should return TRUE when is given [10, 15, 3, 7] and the sum of two ones is 17 ", () => {
