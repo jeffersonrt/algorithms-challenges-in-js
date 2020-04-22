@@ -6,6 +6,14 @@
  *
  */
 
-function binarySearch(list, target) {}
+/*
+ * ITERATIVE APPROACH
+ */
+const binarySearch = (list, target) => {};
 
-export default binarySearch;
+/*
+ * RECURSIVE APPROACH
+ */
+const binarySearchRecursion = (list, target, pointL, pointR) => {};
+
+export { binarySearchRecursion, binarySearch };

@@ -38,7 +38,7 @@ yarn test
 - Well Formed Formules
 - Binary Search
   - [ x ] Iterative Approach
-  - [ ] Recursive Approach
+  - [ x ] Recursive Approach
 
 ## Contributing
 
