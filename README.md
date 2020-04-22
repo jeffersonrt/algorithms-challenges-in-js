@@ -33,7 +33,12 @@ yarn test
 
 ## Challenges
 
-- [Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem) :+1
+- [Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem)
+- Two Add Up To K
+- Well Formed Formules
+- Binary Search
+  - [ x ] Iterative Approach
+  - [ x ] Recursive Approach
 
 ## Contributing
 
