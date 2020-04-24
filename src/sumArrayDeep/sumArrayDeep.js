@@ -5,6 +5,29 @@
  *
  */
 
-const sumArrayDeep = (list, deeph) => {};
+const sumArrayDeep = (list, deeph = 1) => {
+  let total = 0;
 
-export default sumArrayDeep;
+  list.forEach((element) => {
+    if (Number.isInteger(element)) {
+      total += element;
+    } else {
+      total += sumArrayDeep(element, deeph + 1);
+    }
+  });
+
+  return total * deeph;
+};
+
+const sumArrayDeepReduce = (list, deeph = 1) => {
+  let total = list.reduce((acc, element) => {
+    if (Number.isInteger(element)) {
+      return acc + element;
+    }
+    return acc + sumArrayDeep(element, deeph + 1);
+  }, 0);
+
+  return total * deeph;
+};
+
+export { sumArrayDeep, sumArrayDeepReduce };
