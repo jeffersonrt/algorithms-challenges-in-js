@@ -39,6 +39,7 @@ yarn test
 - Binary Search
   - [ x ] Iterative Approach
   - [ x ] Recursive Approach
+- Sum Array Values Deeply
 
 ## Contributing
 
